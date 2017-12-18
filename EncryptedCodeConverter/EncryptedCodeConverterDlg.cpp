@@ -24,7 +24,8 @@ CEncryptedCodeConverterDlg::CEncryptedCodeConverterDlg(CWnd* pParent /*=NULL*/)
 
 void CEncryptedCodeConverterDlg::DoDataExchange(CDataExchange* pDX)
 {
-	CDialogEx::DoDataExchange(pDX);
+    CDialogEx::DoDataExchange(pDX);
+    DDX_Control(pDX, IDC_RADIO1, m_Encoding);
 }
 
 BEGIN_MESSAGE_MAP(CEncryptedCodeConverterDlg, CDialogEx)
