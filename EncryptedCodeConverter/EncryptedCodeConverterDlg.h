@@ -5,6 +5,7 @@
 #pragma once
 #include "afxwin.h"
 #include "Base64.h"
+#include "Md5.h"
 
 
 // CEncryptedCodeConverterDlg ¶Ô»°¿ò
@@ -34,5 +35,7 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
     CButton m_Encoding;
+    EncodingConverter *pConvert;
     Base64Converter converter1;
+    Md5Converter converter2;
 };
